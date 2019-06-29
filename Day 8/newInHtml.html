@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        input{
+            border-radius:4px;
+            box-shadow:3px 3px 4px black;
+        }
+        input[type=submit]{
+            height: 30px;
+            border-radius: 40px;
+            color: white;
+            background: linear-gradient(to left,navy,red);
+        }
+        input[type^=te]{
+            
+            background:yellow;
+        }
+        input[type$=l]{
+            
+            background:greenyellow;
+        }
+        input[type*=u]{
+            
+            background:deepskyblue;
+        }
+        input:valid{
+            
+            border:2px solid navy;
+        }
+        input:invalid{
+            
+            border : 2px solid red;
+        }
+    </style>
+
+  </head>
+  <body>
+    <img src="" height="200" width="200">
+
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">First Name</label>
+                </td>
+                <td>
+                    <input type="text" name="fname" id = "fname" placeholder="Key in your first name" required minlength="5" maxlength="10"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email ID</label>
+                </td>
+                <td>
+                    <input type="email" placeholder="abc@xyz.com" id="email"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="wxp">Exp in Years</label>
+                </td>
+                <td>
+                    <input type="number" min="3" max="5" id="wxp"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="homePage">URL</label>
+                </td>
+                <td>
+                    <input type="url" id="homePage" placeholder="http://www.zensar.com"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="doj">Date of Joining</label>
+                </td>
+                <td>
+                    <input type="date" placeholder="dd/mm/yyyy" id="doj"/>
+                </td>
+            </tr>
+            <<tr>
+                <td>
+                    <label for="favclr">FavColor</label>
+                </td>
+                <td>
+                    <input type="color" id="favclr">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="RegisterHere"/></td>
+            </tr>
+        </table>
+    </form>
+  </body>
+</html>
